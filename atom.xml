@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://safe049.github.io/</id>
     <title>白昼’s Blog</title>
-    <updated>2024-08-03T05:50:16.286Z</updated>
+    <updated>2024-08-03T07:37:05.437Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>白昼</name>
@@ -15,22 +15,6 @@
     <logo>http://safe049.github.io/avatar/avatar.jpg</logo>
     <icon>http://safe049.github.io/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © 白昼</rights>
-    <entry>
-        <title type="html"><![CDATA[迁移至Valaxy]]></title>
-        <id>http://safe049.github.io/posts/migrate</id>
-        <link href="http://safe049.github.io/posts/migrate"/>
-        <updated>2024-08-03T02:40:21.000Z</updated>
-        <content type="html"><![CDATA[<h2>迁移</h2>
-<p>如果不出任何问题，此博客将在几天内迁移到<strong>Valaxy</strong>框架，Valaxy的中文文档：<a href="https://valaxy.site/">Valaxy</a></p>
-<p>迁移后的域名会与现在的域名一致</p>
-<br/><p>访问 <a href="http://safe049.github.io/posts/migrate" target="_blank">http://safe049.github.io/posts/migrate</a> 阅读全文。</p>]]></content>
-        <author>
-            <name>白昼</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-08-03T04:35:23.591Z</published>
-    </entry>
     <entry>
         <title type="html"><![CDATA[QQ新网页骗局？]]></title>
         <id>http://safe049.github.io/posts/malweb</id>
@@ -47,7 +31,23 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-08-03T04:35:18.001Z</published>
+        <published>2024-08-03T07:36:46.995Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[迁移至Valaxy]]></title>
+        <id>http://safe049.github.io/posts/migrate</id>
+        <link href="http://safe049.github.io/posts/migrate"/>
+        <updated>2024-08-03T02:40:21.000Z</updated>
+        <content type="html"><![CDATA[<h2>迁移</h2>
+<p>如果不出任何问题，此博客将在几天内迁移到<strong>Valaxy</strong>框架，Valaxy的中文文档：<a href="https://valaxy.site/">Valaxy</a></p>
+<p>迁移后的域名会与现在的域名一致</p>
+<br/><p>访问 <a href="http://safe049.github.io/posts/migrate" target="_blank">http://safe049.github.io/posts/migrate</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>白昼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-08-03T04:35:23.591Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Linux 上制作字符动画]]></title>

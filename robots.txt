@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://safe049.github.io/sitemap.xml
