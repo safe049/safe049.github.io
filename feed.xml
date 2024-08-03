@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>白昼’s Blog</title>
+        <link>http://safe049.github.io/</link>
+        <description>很杂很杂的博客，什么都有</description>
+        <lastBuildDate>Sat, 03 Aug 2024 05:50:16 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>白昼’s Blog</title>
+            <url>http://safe049.github.io/avatar/avatar.jpg</url>
+            <link>http://safe049.github.io/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2024 © 白昼</copyright>
+        <atom:link href="http://safe049.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[迁移至Valaxy]]></title>
+            <link>http://safe049.github.io/posts/migrate</link>
+            <guid>http://safe049.github.io/posts/migrate</guid>
+            <pubDate>Sat, 03 Aug 2024 04:35:23 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>迁移</h2>
+<p>如果不出任何问题，此博客将在几天内迁移到<strong>Valaxy</strong>框架，Valaxy的中文文档：<a href="https://valaxy.site/">Valaxy</a></p>
+<p>迁移后的域名会与现在的域名一致</p>
+<br/><p>访问 <a href="http://safe049.github.io/posts/migrate" target="_blank">http://safe049.github.io/posts/migrate</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (白昼)</author>
+        </item>
+        <item>
+            <title><![CDATA[QQ新网页骗局？]]></title>
+            <link>http://safe049.github.io/posts/malweb</link>
+            <guid>http://safe049.github.io/posts/malweb</guid>
+            <pubDate>Sat, 03 Aug 2024 04:35:18 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>写在开始</h2>
+<p>最近，我在qq空间看到一个奇怪的说说</p>
+<p><img src="https://t.tutu.to/img/BDfa7" alt="空间1" title="空间"></p>
+<p>作为一个瞎搞网安的 我当然会看一看去<br>
+然后我打开了这个链</p>
+<br/><p>访问 <a href="http://safe049.github.io/posts/malweb" target="_blank">http://safe049.github.io/posts/malweb</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (白昼)</author>
+        </item>
+        <item>
+            <title><![CDATA[Linux 上制作字符动画]]></title>
+            <link>http://safe049.github.io/posts/linux-ASCII-Animation</link>
+            <guid>http://safe049.github.io/posts/linux-ASCII-Animation</guid>
+            <pubDate>Sat, 03 Aug 2024 04:35:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>哈喽各位好</h2>
+<p>最近火车头突然就火了 所以我就想蹭蹭热度【<s>虽然没蹭到</s>】<br>
+那么怎么蹭呢，我就拿出了opencv想着整个字符动画<br>
+【我的B站视频】[火车头，但是字符动画](<a href="https://ww">https://ww</a></p>
+<br/><p>访问 <a href="http://safe049.github.io/posts/linux-ASCII-Animation" target="_blank">http://safe049.github.io/posts/linux-ASCII-Animation</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (白昼)</author>
+        </item>
+        <item>
+            <title><![CDATA[开始]]></title>
+            <link>http://safe049.github.io/posts/hello-world</link>
+            <guid>http://safe049.github.io/posts/hello-world</guid>
+            <pubDate>Sat, 03 Aug 2024 04:34:48 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>你好啊</h3>
+<p>这是本站的第一个页面，首先呢，如果你想查看“About（关于我）”页面，<br>
+只需在侧边栏点击我的头像</p>
+<p>事实上，我之前整过很多个博客，但是域名商和服务器商<s>一起私奔</s>了<br>
+然后发现Gi</p>
+<br/><p>访问 <a href="http://safe049.github.io/posts/hello-world" target="_blank">http://safe049.github.io/posts/hello-world</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (白昼)</author>
+        </item>
+        <item>
+            <title><![CDATA[日记-修复了帖子进不去的问题]]></title>
+            <link>http://safe049.github.io/posts/diary1</link>
+            <guid>http://safe049.github.io/posts/diary1</guid>
+            <pubDate>Sat, 03 Aug 2024 04:34:36 GMT</pubDate>
+            <content:encoded><![CDATA[<p>星期六, 03. 八月 2024 09:54上午</p>
+<h2>写在开始</h2>
+<p>昨天的时候，我晚上打开自己的博客【手机上】，结果发现帖子页面怎么也进不去，就显示了这么一串东西：</p>
+<pre><code>.post-block </code></pre>
+<br/><p>访问 <a href="http://safe049.github.io/posts/diary1" target="_blank">http://safe049.github.io/posts/diary1</a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (白昼)</author>
+        </item>
+    </channel>
+</rss>

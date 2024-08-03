@@ -1,0 +1,74 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "白昼’s Blog",
+    "home_page_url": "http://safe049.github.io/",
+    "feed_url": "http://safe049.github.io/feed.json",
+    "description": "很杂很杂的博客，什么都有",
+    "icon": "http://safe049.github.io/avatar/avatar.jpg",
+    "author": {
+        "name": "白昼",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h2>迁移</h2>\n<p>如果不出任何问题，此博客将在几天内迁移到<strong>Valaxy</strong>框架，Valaxy的中文文档：<a href=\"https://valaxy.site/\">Valaxy</a></p>\n<p>迁移后的域名会与现在的域名一致</p>\n<br/><p>访问 <a href=\"http://safe049.github.io/posts/migrate\" target=\"_blank\">http://safe049.github.io/posts/migrate</a> 阅读全文。</p>",
+            "url": "http://safe049.github.io/posts/migrate",
+            "title": "迁移至Valaxy",
+            "date_modified": "2024-08-03T02:40:21.000Z",
+            "date_published": "2024-08-03T04:35:23.591Z",
+            "author": {
+                "name": "白昼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>写在开始</h2>\n<p>最近，我在qq空间看到一个奇怪的说说</p>\n<p><img src=\"https://t.tutu.to/img/BDfa7\" alt=\"空间1\" title=\"空间\"></p>\n<p>作为一个瞎搞网安的 我当然会看一看去<br>\n然后我打开了这个链</p>\n<br/><p>访问 <a href=\"http://safe049.github.io/posts/malweb\" target=\"_blank\">http://safe049.github.io/posts/malweb</a> 阅读全文。</p>",
+            "url": "http://safe049.github.io/posts/malweb",
+            "title": "QQ新网页骗局？",
+            "date_modified": "2024-08-02T13:59:20.000Z",
+            "date_published": "2024-08-03T04:35:18.001Z",
+            "author": {
+                "name": "白昼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>哈喽各位好</h2>\n<p>最近火车头突然就火了 所以我就想蹭蹭热度【<s>虽然没蹭到</s>】<br>\n那么怎么蹭呢，我就拿出了opencv想着整个字符动画<br>\n【我的B站视频】[火车头，但是字符动画](<a href=\"https://ww\">https://ww</a></p>\n<br/><p>访问 <a href=\"http://safe049.github.io/posts/linux-ASCII-Animation\" target=\"_blank\">http://safe049.github.io/posts/linux-ASCII-Animation</a> 阅读全文。</p>",
+            "url": "http://safe049.github.io/posts/linux-ASCII-Animation",
+            "title": "Linux 上制作字符动画",
+            "date_modified": "2024-08-02T09:00:44.000Z",
+            "date_published": "2024-08-03T04:35:00.496Z",
+            "author": {
+                "name": "白昼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h3>你好啊</h3>\n<p>这是本站的第一个页面，首先呢，如果你想查看“About（关于我）”页面，<br>\n只需在侧边栏点击我的头像</p>\n<p>事实上，我之前整过很多个博客，但是域名商和服务器商<s>一起私奔</s>了<br>\n然后发现Gi</p>\n<br/><p>访问 <a href=\"http://safe049.github.io/posts/hello-world\" target=\"_blank\">http://safe049.github.io/posts/hello-world</a> 阅读全文。</p>",
+            "url": "http://safe049.github.io/posts/hello-world",
+            "title": "开始",
+            "date_modified": "2024-08-03T04:34:48.055Z",
+            "date_published": "2024-08-03T04:34:48.055Z",
+            "author": {
+                "name": "白昼",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<p>星期六, 03. 八月 2024 09:54上午</p>\n<h2>写在开始</h2>\n<p>昨天的时候，我晚上打开自己的博客【手机上】，结果发现帖子页面怎么也进不去，就显示了这么一串东西：</p>\n<pre><code>.post-block </code></pre>\n<br/><p>访问 <a href=\"http://safe049.github.io/posts/diary1\" target=\"_blank\">http://safe049.github.io/posts/diary1</a> 阅读全文。</p>",
+            "url": "http://safe049.github.io/posts/diary1",
+            "title": "日记-修复了帖子进不去的问题",
+            "date_modified": "2024-08-03T01:46:29.000Z",
+            "date_published": "2024-08-03T04:34:36.423Z",
+            "author": {
+                "name": "白昼",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}
