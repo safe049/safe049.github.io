@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://safe049.github.io/</id>
     <title>白昼’s Blog</title>
-    <updated>2024-08-03T08:25:57.147Z</updated>
+    <updated>2024-08-03T09:06:39.017Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>白昼</name>
@@ -15,6 +15,22 @@
     <logo>http://safe049.github.io/avatar/avatar.jpg</logo>
     <icon>http://safe049.github.io/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © 白昼</rights>
+    <entry>
+        <title type="html"><![CDATA[迁移完毕]]></title>
+        <id>http://safe049.github.io/posts/migrated</id>
+        <link href="http://safe049.github.io/posts/migrated"/>
+        <updated>2024-08-03T09:06:19.809Z</updated>
+        <content type="html"><![CDATA[<h3>各位好</h3>
+<p>好久不见【迫真】，上午的时候我发现hexo陪着hexo yun主题实在有点那啥</p>
+<p>不好自定义样式之类的，然后我就经历了半个下午的查github之类的然后成功迁移到了Valaxy</p>
+<br/><p>访问 <a href="http://safe049.github.io/posts/migrated" target="_blank">http://safe049.github.io/posts/migrated</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>白昼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-08-03T09:06:19.809Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[QQ新网页骗局？]]></title>
         <id>http://safe049.github.io/posts/malweb</id>
