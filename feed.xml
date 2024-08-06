@@ -4,7 +4,7 @@
         <title>白昼’s Blog</title>
         <link>http://safe049.github.io/</link>
         <description>很杂很杂的博客，什么都有</description>
-        <lastBuildDate>Tue, 06 Aug 2024 02:57:30 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 06 Aug 2024 03:10:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -18,7 +18,7 @@
             <title><![CDATA[eww新版的构建安装]]></title>
             <link>http://safe049.github.io/posts/ewwfix</link>
             <guid>http://safe049.github.io/posts/ewwfix</guid>
-            <pubDate>Tue, 06 Aug 2024 02:32:46 GMT</pubDate>
+            <pubDate>Tue, 06 Aug 2024 03:10:09 GMT</pubDate>
             <content:encoded><![CDATA[<h2>写在开始</h2>
 <p>昨天，我装了个蛮好看的平铺窗口管理器：z0mbi3的dotfiles，这是一个基于bspwm的x11<br>
 窗口管理器，倒是很好看，效果图：<br>

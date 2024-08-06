@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://safe049.github.io/</id>
     <title>白昼’s Blog</title>
-    <updated>2024-08-06T02:57:30.523Z</updated>
+    <updated>2024-08-06T03:10:54.467Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>白昼</name>
@@ -19,7 +19,7 @@
         <title type="html"><![CDATA[eww新版的构建安装]]></title>
         <id>http://safe049.github.io/posts/ewwfix</id>
         <link href="http://safe049.github.io/posts/ewwfix"/>
-        <updated>2024-08-06T02:32:46.040Z</updated>
+        <updated>2024-08-06T03:10:09.514Z</updated>
         <content type="html"><![CDATA[<h2>写在开始</h2>
 <p>昨天，我装了个蛮好看的平铺窗口管理器：z0mbi3的dotfiles，这是一个基于bspwm的x11<br>
 窗口管理器，倒是很好看，效果图：<br>
@@ -30,7 +30,7 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-08-06T02:32:46.040Z</published>
+        <published>2024-08-06T03:10:09.514Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[迁移完毕]]></title>
