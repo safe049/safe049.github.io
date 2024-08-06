@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://safe049.github.io/</id>
     <title>白昼’s Blog</title>
-    <updated>2024-08-03T09:17:02.875Z</updated>
+    <updated>2024-08-06T02:33:55.699Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>白昼</name>
@@ -15,6 +15,23 @@
     <logo>http://safe049.github.io/avatar/avatar.jpg</logo>
     <icon>http://safe049.github.io/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © 白昼</rights>
+    <entry>
+        <title type="html"><![CDATA[eww新版的构建安装]]></title>
+        <id>http://safe049.github.io/posts/ewwfix</id>
+        <link href="http://safe049.github.io/posts/ewwfix"/>
+        <updated>2024-08-06T02:32:46.040Z</updated>
+        <content type="html"><![CDATA[<h2>写在开始</h2>
+<p>昨天，我装了个蛮好看的平铺窗口管理器：z0mbi3的dotfiles，这是一个基于bspwm的x11<br>
+窗口管理器，倒是很好看，效果图：<br>
+![dotfiles](<a href="https://t.t">https://t.t</a></p>
+<br/><p>访问 <a href="http://safe049.github.io/posts/ewwfix" target="_blank">http://safe049.github.io/posts/ewwfix</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>白昼</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-08-06T02:32:46.040Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[迁移完毕]]></title>
         <id>http://safe049.github.io/posts/migrated</id>
