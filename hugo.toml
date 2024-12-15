@@ -30,3 +30,7 @@ sectionPagesMenu = 'main'
     icon = "brand-github"
     name = "Github"
     url = "https://github.com/safe049"
+  [[params.social]]
+    icon = "mail"
+    name = "Email"
+    url = "mailto:1329261154@qq.com"
