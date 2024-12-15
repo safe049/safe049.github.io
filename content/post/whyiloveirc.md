@@ -12,8 +12,7 @@ tags = ['IRC','日记']
 他太特么有魅力了
 
 IRSSI上的聊天界面就像这样:
-![IRSSI](https://tutu.to/img/a7rIK)
-
+![irssi](https://www.helloimg.com/i/2024/12/15/675ec67ebea52.png)
 这东西放在现代长得甚至很科幻
 
 也许这就是CLI的魅力吧
