@@ -2,45 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://safe049.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-12-16T01:00:07+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/post/</loc>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2024-12-16T01:00:07+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/post/utterance/</loc>
+    <loc>http://localhost:1313/post/utterance/</loc>
     <lastmod>2024-12-16T01:00:07+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/tags/irc/</loc>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-12-16T01:00:07+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-12-16T01:00:07+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2024-12-16T01:00:07+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/irc/</loc>
     <lastmod>2024-12-15T19:50:34+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/tags/</loc>
+    <loc>http://localhost:1313/post/whyiloveirc/</loc>
     <lastmod>2024-12-15T19:50:34+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/post/whyiloveirc/</loc>
+    <loc>http://localhost:1313/tags/%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2024-12-15T19:50:34+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/tags/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2024-12-15T19:50:34+08:00</lastmod>
-  </url><url>
-    <loc>https://safe049.github.io/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <loc>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2024-12-15T18:54:19+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/post/talkaboutstudy/</loc>
+    <loc>http://localhost:1313/post/talkaboutstudy/</loc>
     <lastmod>2024-12-15T18:54:19+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/tags/%E6%9D%82%E9%A1%B9/</loc>
+    <loc>http://localhost:1313/tags/%E6%9D%82%E9%A1%B9/</loc>
     <lastmod>2024-12-15T14:06:47+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/post/tagtest/</loc>
+    <loc>http://localhost:1313/post/tagtest/</loc>
     <lastmod>2024-12-15T14:06:47+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/post/start/</loc>
+    <loc>http://localhost:1313/post/start/</loc>
     <lastmod>2024-12-15T13:57:27+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-12-15T13:48:19+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

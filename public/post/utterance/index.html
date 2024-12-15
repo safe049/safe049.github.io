@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh">
-  <head>
-    <title>Utterance // Dysprosium</title>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Hugo上配置Utterance // Dysprosium</title>
     <link rel="shortcut icon" href="https://t.tutu.to/img/alNlI" />
     <meta charset="utf-8" />
     <meta name="generator" content="Hugo 0.139.4">
@@ -14,27 +14,27 @@
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Utterance">
+  <meta name="twitter:title" content="Hugo上配置Utterance">
   <meta name="twitter:description" content="序言 要做博客 怎么能没有评论呢
 所以我折腾了一晚上 想把gitalk放上去 但是半天每用
 不过我发现Hugo里,Utteranc可以非常方便的配置
 于是就有了评论
 实施 非常简单
-只需要在hugo.toml里加上以下字段
-[params.utteranc] enable = true repo = &#34;safe049/safe049.github.io&#34; issueTerm = &#34;pathname&#34; theme = &#34;github-dark&#34; 把repo部分换成你自己的repo
+只需要修改主题的layouts/_default/single.html里的如下处
+&lt;div class=&#34;post-footer&#34;&gt; {{ template &#34;_internal/disqus.html&#34; . }} &lt;script src=&#34;https://utteranc.es/client.js&#34; repo=&#34;safe049/safe049.github.io&#34; issue-term=&#34;pathname&#34; label=&#34;Utterances&#34; theme=&#34;github-dark&#34; crossorigin=&#34;anonymous&#34; async&gt; &lt;/script&gt; &lt;/div&gt; &lt;/article&gt; {{ end }} 把repo部分换成你自己的repo
 theme那里自己选一个好看的主题
 总结 配置hugo.toml">
 
-    <meta property="og:url" content="https://safe049.github.io/post/utterance/">
+    <meta property="og:url" content="http://localhost:1313/post/utterance/">
   <meta property="og:site_name" content="Dysprosium">
-  <meta property="og:title" content="Utterance">
+  <meta property="og:title" content="Hugo上配置Utterance">
   <meta property="og:description" content="序言 要做博客 怎么能没有评论呢
 所以我折腾了一晚上 想把gitalk放上去 但是半天每用
 不过我发现Hugo里,Utteranc可以非常方便的配置
 于是就有了评论
 实施 非常简单
-只需要在hugo.toml里加上以下字段
-[params.utteranc] enable = true repo = &#34;safe049/safe049.github.io&#34; issueTerm = &#34;pathname&#34; theme = &#34;github-dark&#34; 把repo部分换成你自己的repo
+只需要修改主题的layouts/_default/single.html里的如下处
+&lt;div class=&#34;post-footer&#34;&gt; {{ template &#34;_internal/disqus.html&#34; . }} &lt;script src=&#34;https://utteranc.es/client.js&#34; repo=&#34;safe049/safe049.github.io&#34; issue-term=&#34;pathname&#34; label=&#34;Utterances&#34; theme=&#34;github-dark&#34; crossorigin=&#34;anonymous&#34; async&gt; &lt;/script&gt; &lt;/div&gt; &lt;/article&gt; {{ end }} 把repo部分换成你自己的repo
 theme那里自己选一个好看的主题
 总结 配置hugo.toml">
   <meta property="og:locale" content="zh">
@@ -42,12 +42,14 @@ theme那里自己选一个好看的主题
     <meta property="article:section" content="post">
     <meta property="article:published_time" content="2024-12-16T01:00:07+08:00">
     <meta property="article:modified_time" content="2024-12-16T01:00:07+08:00">
+    <meta property="article:tag" content="博客">
+    <meta property="article:tag" content="Hugo">
 
 
   </head>
   <body>
     <header class="app-header">
-      <a href="https://safe049.github.io/"><img class="app-header-avatar" src="https://t.tutu.to/img/alNlI" alt="Dysprosium" /></a>
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="https://t.tutu.to/img/alNlI" alt="Dysprosium" /></a>
       <span class="app-header-title">Dysprosium</span>
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/">Home</a>
@@ -78,7 +80,7 @@ theme那里自己选一个好看的主题
       
   <article class="post">
     <header class="post-header">
-      <h1 class ="post-title">Utterance</h1>
+      <h1 class ="post-title">Hugo上配置Utterance</h1>
       <div class="post-meta">
         <div>
           <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
@@ -87,6 +89,11 @@ theme那里自己选一个好看的主题
         <div>
           <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
           1 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="http://localhost:1313/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+              <a class="tag" href="http://localhost:1313/tags/hugo/">Hugo</a>
         </div>
       </div>
     </header>
@@ -98,20 +105,34 @@ theme那里自己选一个好看的主题
 <p>于是就有了评论</p>
 <h1 id="实施">实施</h1>
 <p>非常简单</p>
-<p>只需要在hugo.toml里加上以下字段</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">utteranc</span>]
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">repo</span> = <span style="color:#e6db74">&#34;safe049/safe049.github.io&#34;</span> 
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">issueTerm</span> = <span style="color:#e6db74">&#34;pathname&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;github-dark&#34;</span>
+<p>只需要修改主题的layouts/_default/single.html里的如下处</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;post-footer&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      {{ template &#34;_internal/disqus.html&#34; . }}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://utteranc.es/client.js&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">repo</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;safe049/safe049.github.io&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">issue-term</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pathname&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">label</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Utterances&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">theme</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;github-dark&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">async</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">script</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>{{ end }}
 </span></span></code></pre></div><p>把repo部分换成你自己的repo</p>
 <p>theme那里自己选一个好看的主题</p>
 <h1 id="总结">总结</h1>
 <p>配置hugo.toml</p>
 
+      <span>------------------------------------------------------------------------</span>
     </div>
     <div class="post-footer">
       
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+      <span id="busuanzi_container_site_pv">--本站总访问量<span id="busuanzi_value_site_pv"></span>次--</span>
+      <span id="busuanzi_container_site_uv">--本站总访客数<span id="busuanzi_value_site_uv"></span>人--</span>
+      <span id="busuanzi_container_page_pv">--本文总阅读量<span id="busuanzi_value_page_pv"></span>次--</span>
       <script src="https://utteranc.es/client.js"
         repo="safe049/safe049.github.io"
         issue-term="pathname"
@@ -120,6 +141,8 @@ theme那里自己选一个好看的主题
         crossorigin="anonymous"
         async>
       </script>
+      
+      
     </div>
   </article>
 
