@@ -1,7 +1,7 @@
 +++
 date = '2024-12-16T01:00:07+08:00'
 draft = false
-title = 'Utterance'
+title = 'Hugo上配置Utterance'
 comments = true
 +++
 # 序言
