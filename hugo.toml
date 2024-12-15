@@ -34,9 +34,8 @@ sectionPagesMenu = 'main'
     icon = "mail"
     name = "Email"
     url = "mailto:1329261154@qq.com"
-[params.gitalk] 
-    clientID = "Ov23liC6ph1S4hZi41Fw" # 您刚才创建Github Application 的 Client ID
-    clientSecret = "a7d5b81f218e2c8cca10664ef0e726acd228248e" # 您刚才创建Github Application 的 Client Secret
-    repo = "safe049.github.io" # 您的博客的github地址Repository name，例如：xxxx.github.io
-    owner = "safe049" # 您的GitHub ID
-    admin= "safe049" # 您的GitHub ID
+[params.utteranc]
+  enable = true
+  repo = "safe049/safe049.github.io" ##换成自己得
+  issueTerm = "pathname"
+  theme = "github-dark"
