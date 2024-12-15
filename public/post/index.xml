@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on D0 Blog</title>
-    <link>http://localhost:1313/post/</link>
-    <description>Recent content in Posts on D0 Blog</description>
+    <title>Posts on Dysprosium</title>
+    <link>https://safe049.github.io/post/</link>
+    <description>Recent content in Posts on Dysprosium</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate>Sun, 15 Dec 2024 14:06:47 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://safe049.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>标签测试</title>
-      <link>http://localhost:1313/post/tagtest/</link>
+      <link>https://safe049.github.io/post/tagtest/</link>
       <pubDate>Sun, 15 Dec 2024 14:06:47 +0800</pubDate>
-      <guid>http://localhost:1313/post/tagtest/</guid>
+      <guid>https://safe049.github.io/post/tagtest/</guid>
       <description>&lt;h1 id=&#34;测试&#34;&gt;测试&lt;/h1&gt;&#xA;&lt;p&gt;用于测试标签功能 无用&lt;/p&gt;</description>
     </item>
     <item>
       <title>起源</title>
-      <link>http://localhost:1313/post/start/</link>
+      <link>https://safe049.github.io/post/start/</link>
       <pubDate>Sun, 15 Dec 2024 13:57:27 +0800</pubDate>
-      <guid>http://localhost:1313/post/start/</guid>
+      <guid>https://safe049.github.io/post/start/</guid>
       <description>&lt;h1 id=&#34;起源&#34;&gt;起源&lt;/h1&gt;&#xA;&lt;p&gt;本博客其实于8月左右早已建立&lt;/p&gt;&#xA;&lt;p&gt;但是由于我不小心把源代码删了 不得不重整一个[太悲惨了]&lt;/p&gt;&#xA;&lt;p&gt;于是我就用Hugo重做了一个&lt;/p&gt;&#xA;&lt;p&gt;就这么多&lt;/p&gt;&#xA;&lt;p&gt;没了&lt;/p&gt;</description>
     </item>
   </channel>
