@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Dysprosium</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 15 Dec 2024 19:50:34 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Dec 2024 01:00:07 +0800</lastBuildDate>
     <atom:link href="https://safe049.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Utterance</title>
+      <link>https://safe049.github.io/post/utterance/</link>
+      <pubDate>Mon, 16 Dec 2024 01:00:07 +0800</pubDate>
+      <guid>https://safe049.github.io/post/utterance/</guid>
+      <description>&lt;h1 id=&#34;序言&#34;&gt;序言&lt;/h1&gt;&#xA;&lt;p&gt;要做博客 怎么能没有评论呢&lt;/p&gt;&#xA;&lt;p&gt;所以我折腾了一晚上 想把gitalk放上去 但是半天每用&lt;/p&gt;&#xA;&lt;p&gt;不过我发现Hugo里,Utteranc可以非常方便的配置&lt;/p&gt;&#xA;&lt;p&gt;于是就有了评论&lt;/p&gt;&#xA;&lt;h1 id=&#34;实施&#34;&gt;实施&lt;/h1&gt;&#xA;&lt;p&gt;非常简单&lt;/p&gt;&#xA;&lt;p&gt;只需要在hugo.toml里加上以下字段&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;utteranc&lt;/span&gt;]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;enable&lt;/span&gt; = &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;repo&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;safe049/safe049.github.io&amp;#34;&lt;/span&gt; &#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;issueTerm&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pathname&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;theme&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;github-dark&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;把repo部分换成你自己的repo&lt;/p&gt;&#xA;&lt;p&gt;theme那里自己选一个好看的主题&lt;/p&gt;&#xA;&lt;h1 id=&#34;总结&#34;&gt;总结&lt;/h1&gt;&#xA;&lt;p&gt;配置hugo.toml&lt;/p&gt;</description>
+    </item>
     <item>
       <title>为什么我喜欢IRC</title>
       <link>https://safe049.github.io/post/whyiloveirc/</link>
