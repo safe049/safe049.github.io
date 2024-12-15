@@ -3,6 +3,7 @@ date = '2024-12-15T19:50:34+08:00'
 draft = false
 title = '为什么我喜欢IRC'
 tags = ['IRC','日记']
+comments = true
 +++
 
 # 首先
