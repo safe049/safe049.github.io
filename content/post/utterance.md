@@ -2,6 +2,7 @@
 date = '2024-12-16T01:00:07+08:00'
 draft = false
 title = 'Hugo上配置Utterance'
+tags = ['博客','Hugo']
 comments = true
 +++
 # 序言
