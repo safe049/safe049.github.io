@@ -2,9 +2,6 @@
 	path = safe049.github.io
   url = https://github.com/safe049/safe049.github.io
 
-[submodule "hugo-theme-m10c"]
-  path = themes/hugo-theme-m10c/
-  url = https://github.com/vaga/hugo-theme-m10c
 [submodule "themes/hugo-theme-m10c"]
 	path = themes/hugo-theme-m10c
 	url = https://github.com/vaga/hugo-theme-m10c
