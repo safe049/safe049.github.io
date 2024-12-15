@@ -1,0 +1,34 @@
+baseURL = 'https://safe049.github.io/'
+languageCode = 'zh'
+title = 'D0 Blog'
+theme = "hugo-theme-m10c"
+
+sectionPagesMenu = 'main'
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+[params]
+  author = "Dysprosium"
+  description = "最好的描述就是没有描述"
+  avatar = 'https://t.tutu.to/img/alNlI'
+  favicon = 'https://t.tutu.to/img/alNlI'
+  menu_item_separator = " | "
+  [[params.social]]
+    icon = "brand-github"
+    name = "Github"
+    url = "https://github.com/safe049"
+
+

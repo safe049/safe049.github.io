@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D0 Blog</title>
+    <link>https://safe049.github.io/</link>
+    <description>Recent content on D0 Blog</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Sun, 15 Dec 2024 14:06:47 +0800</lastBuildDate>
+    <atom:link href="https://safe049.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>标签测试</title>
+      <link>https://safe049.github.io/post/tagtest/</link>
+      <pubDate>Sun, 15 Dec 2024 14:06:47 +0800</pubDate>
+      <guid>https://safe049.github.io/post/tagtest/</guid>
+      <description>&lt;h1 id=&#34;测试&#34;&gt;测试&lt;/h1&gt;&#xA;&lt;p&gt;用于测试标签功能 无用&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>起源</title>
+      <link>https://safe049.github.io/post/start/</link>
+      <pubDate>Sun, 15 Dec 2024 13:57:27 +0800</pubDate>
+      <guid>https://safe049.github.io/post/start/</guid>
+      <description>&lt;h1 id=&#34;起源&#34;&gt;起源&lt;/h1&gt;&#xA;&lt;p&gt;本博客其实于8月左右早已建立&lt;/p&gt;&#xA;&lt;p&gt;但是由于我不小心把源代码删了 不得不重整一个[太悲惨了]&lt;/p&gt;&#xA;&lt;p&gt;于是我就用Hugo重做了一个&lt;/p&gt;&#xA;&lt;p&gt;就这么多&lt;/p&gt;&#xA;&lt;p&gt;没了&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://safe049.github.io/about/</link>
+      <pubDate>Sun, 15 Dec 2024 13:48:19 +0800</pubDate>
+      <guid>https://safe049.github.io/about/</guid>
+      <description>&lt;h1 id=&#34;你好&#34;&gt;你好&lt;/h1&gt;&#xA;&lt;p&gt;我是镝零,你也可以叫我D0,这个名字来源于我的外网名Dynamo以及CPU状态D0&lt;/p&gt;&#xA;&lt;p&gt;一个卑微的初中生&lt;/p&gt;&#xA;&lt;h1 id=&#34;成分&#34;&gt;成分&lt;/h1&gt;&#xA;&lt;p&gt;车万人,精神分析,Python,C++,Transformer,AI微调,Arch Linux用户,做音乐的,速写画的很好,数位板长久未用,主战地一玩家,网安人,等&lt;/p&gt;&#xA;&lt;h1 id=&#34;联系方式&#34;&gt;联系方式&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;QQ:1329261154&lt;/li&gt;&#xA;&lt;li&gt;Email:1329261154@qq.com&lt;/li&gt;&#xA;&lt;li&gt;Github:https://github.com/safe049&lt;/li&gt;&#xA;&lt;li&gt;HuggingFace: &lt;a href=&#34;https://huggingface.co/safe049&#34;&gt;https://huggingface.co/safe049&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;关于本站&#34;&gt;关于本站&lt;/h1&gt;&#xA;&lt;p&gt;本站使用Hugo M10C主题建立,原使用Valaxy框架&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
