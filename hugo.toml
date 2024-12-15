@@ -1,6 +1,6 @@
 baseURL = 'https://safe049.github.io/'
 languageCode = 'zh'
-title = 'D0 Blog'
+title = 'Dysprosium'
 theme = "hugo-theme-m10c"
 
 sectionPagesMenu = 'main'
