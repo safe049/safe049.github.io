@@ -2,7 +2,6 @@ baseURL = 'https://safe049.github.io/'
 languageCode = 'zh'
 title = 'Dysprosium'
 theme = "hugo-theme-m10c"
-disqusShortname = "safe049"
 
 sectionPagesMenu = 'main'
 [menu]
