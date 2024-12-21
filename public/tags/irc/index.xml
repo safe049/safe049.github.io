@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IRC on Dysprosium</title>
-    <link>http://localhost:1313/tags/irc/</link>
+    <link>https://safe049.github.io/tags/irc/</link>
     <description>Recent content in IRC on Dysprosium</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate>Sun, 15 Dec 2024 19:50:34 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/irc/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://safe049.github.io/tags/irc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为什么我喜欢IRC</title>
-      <link>http://localhost:1313/post/whyiloveirc/</link>
+      <link>https://safe049.github.io/post/whyiloveirc/</link>
       <pubDate>Sun, 15 Dec 2024 19:50:34 +0800</pubDate>
-      <guid>http://localhost:1313/post/whyiloveirc/</guid>
+      <guid>https://safe049.github.io/post/whyiloveirc/</guid>
       <description>&lt;h1 id=&#34;首先&#34;&gt;首先&lt;/h1&gt;&#xA;&lt;p&gt;如果你不知道IRC是什么,他的全称是Internet Relay Chat,一个非常远古的聊天工具,你可以用irssi或者Konversation或者KiwiIRC来用,不过大部分服务器上你得先想办法绕了GFW才能过SASL验证,我因为这个折腾了一天&lt;/p&gt;&#xA;&lt;h1 id=&#34;为什么&#34;&gt;为什么?&lt;/h1&gt;&#xA;&lt;p&gt;他太特么有魅力了&lt;/p&gt;&#xA;&lt;p&gt;IRSSI上的聊天界面就像这样:&#xA;&lt;img src=&#34;https://www.helloimg.com/i/2024/12/15/675ec67ebea52.png&#34; alt=&#34;irssi&#34;&gt;&#xA;这东西放在现代长得甚至很科幻&lt;/p&gt;&#xA;&lt;p&gt;也许这就是CLI的魅力吧&lt;/p&gt;&#xA;&lt;p&gt;另外,Arch Linux的IRC频道里的人都挺友善的属于是&lt;/p&gt;&#xA;&lt;p&gt;而且虽然看起来频道里只有几十个人在&lt;/p&gt;&#xA;&lt;p&gt;但一旦你发一条消息&lt;/p&gt;&#xA;&lt;p&gt;就会出来一大堆人和你聊&lt;/p&gt;&#xA;&lt;p&gt;这东西比现代绝大多数聊天工具的体验都要舒适的多&lt;/p&gt;&#xA;&lt;p&gt;&lt;del&gt;而且好多人喜欢用颜文字&lt;/del&gt;&lt;/p&gt;</description>
     </item>
   </channel>
