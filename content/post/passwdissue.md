@@ -1,7 +1,7 @@
 +++
 date = '2024-12-21T12:11:07+08:00'
 draft = false
-title = '更改密码无用'
+title = '更改密码无用的解决'
 comments = true
 tags = ['Linux','Arch Linux']
 +++
