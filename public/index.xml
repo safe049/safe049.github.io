@@ -6,8 +6,15 @@
     <description>Recent content on Dysprosium</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 04 Jan 2025 16:44:21 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2025 23:34:36 +0800</lastBuildDate>
     <atom:link href="https://safe049.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Neovim的常用键位</title>
+      <link>https://safe049.github.io/post/neovimuse/</link>
+      <pubDate>Sun, 05 Jan 2025 23:34:36 +0800</pubDate>
+      <guid>https://safe049.github.io/post/neovimuse/</guid>
+      <description>&lt;h1 id=&#34;序言&#34;&gt;序言&lt;/h1&gt;&#xA;&lt;p&gt;最近迷上了Neovim,这东西是真舒服,不过我拿来搭配vscode使用&lt;/p&gt;&#xA;&lt;p&gt;那么就来写一下他的常用键位吧&lt;/p&gt;&#xA;&lt;p&gt;注:使用:help可以查看帮助文档&lt;/p&gt;&#xA;&lt;h1 id=&#34;基本操作&#34;&gt;基本操作&lt;/h1&gt;&#xA;&lt;p&gt;ESC: 进入命令模式&lt;/p&gt;&#xA;&lt;p&gt;i: 进入插入模式&lt;/p&gt;&#xA;&lt;p&gt;a: 在光标后进入插入模式&lt;/p&gt;&#xA;&lt;p&gt;o: 在当前行下方插入新行并进入插入模式&lt;/p&gt;&#xA;&lt;p&gt;O: 在当前行上方插入新行并进入插入模式&lt;/p&gt;&#xA;&lt;p&gt;dd: 删除当前行&lt;/p&gt;&#xA;&lt;p&gt;x: 删除当前字符&lt;/p&gt;&#xA;&lt;p&gt;dw: 删除当前单词&lt;/p&gt;&#xA;&lt;p&gt;yy: 复制当前行&lt;/p&gt;&#xA;&lt;p&gt;yw: 复制当前单词&lt;/p&gt;&#xA;&lt;p&gt;p: 粘贴&lt;/p&gt;&#xA;&lt;p&gt;u: 撤销&lt;/p&gt;&#xA;&lt;p&gt;U: 撤销所有更改&lt;/p&gt;&#xA;&lt;h1 id=&#34;窗口操作&#34;&gt;窗口操作&lt;/h1&gt;&#xA;&lt;p&gt;:sp: 垂直分屏&lt;/p&gt;&#xA;&lt;p&gt;:vsp: 水平分屏&lt;/p&gt;&#xA;&lt;p&gt;:close: 关闭当前窗口&lt;/p&gt;&#xA;&lt;p&gt;:only: 关闭其他窗口&lt;/p&gt;&#xA;&lt;p&gt;:w: 保存当前文件&lt;/p&gt;&#xA;&lt;p&gt;:q: 退出当前文件&lt;/p&gt;&#xA;&lt;p&gt;:q!: 强制退出当前文件&lt;/p&gt;&#xA;&lt;p&gt;:wq: 保存并退出当前文件&lt;/p&gt;&#xA;&lt;h1 id=&#34;导航&#34;&gt;导航&lt;/h1&gt;&#xA;&lt;p&gt;h: 左移&lt;/p&gt;&#xA;&lt;p&gt;j: 下移&lt;/p&gt;&#xA;&lt;p&gt;k: 上移&lt;/p&gt;&#xA;&lt;p&gt;l: 右移&lt;/p&gt;&#xA;&lt;p&gt;H: 移动到屏幕顶部&lt;/p&gt;&#xA;&lt;p&gt;M: 移动到屏幕中间&lt;/p&gt;&#xA;&lt;p&gt;L: 移动到屏幕底部&lt;/p&gt;&#xA;&lt;p&gt;w: 移动到下一个单词开头&lt;/p&gt;&#xA;&lt;p&gt;e: 移动到下一个单词结尾&lt;/p&gt;&#xA;&lt;p&gt;b: 移动到上一个单词开头&lt;/p&gt;&#xA;&lt;p&gt;ge: 移动到上一个单词结尾&lt;/p&gt;</description>
+    </item>
     <item>
       <title>显卡刷BIOS成砖检测不到的修复-2</title>
       <link>https://safe049.github.io/post/gpufixbios2/</link>
