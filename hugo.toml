@@ -23,8 +23,8 @@ sectionPagesMenu = 'main'
 [params]
   author = "Dysprosium"
   description = "最好的描述就是没有描述"
-  avatar = 'https://t.tutu.to/img/alNlI'
-  favicon = 'https://t.tutu.to/img/alNlI'
+  avatar = 'https://t.tutu.to/img/ajEa5'
+  favicon = 'https://t.tutu.to/img/ajEa5'
   menu_item_separator = " | "
   [[params.social]]
     icon = "brand-github"
