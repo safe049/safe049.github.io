@@ -6,8 +6,15 @@
     <description>Recent content on Dysprosium</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate>Sun, 05 Jan 2025 23:34:36 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jan 2025 12:20:44 +0800</lastBuildDate>
     <atom:link href="https://safe049.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>布尔逻辑与逻辑门</title>
+      <link>https://safe049.github.io/post/gatescs/</link>
+      <pubDate>Thu, 16 Jan 2025 12:20:44 +0800</pubDate>
+      <guid>https://safe049.github.io/post/gatescs/</guid>
+      <description>&lt;h1 id=&#34;序言&#34;&gt;序言&lt;/h1&gt;&#xA;&lt;p&gt;本文为 &lt;a href=&#34;https://www.bilibili.com/video/BV1EW411u7th/&#34;&gt;Crash Course Computer Science&lt;/a&gt;内的内容的笔记&lt;/p&gt;&#xA;&lt;h1 id=&#34;布尔代数的基本&#34;&gt;布尔代数的基本&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;变量的值: True False&lt;/li&gt;&#xA;&lt;li&gt;逻辑运算符: NOT, AND, OR, XOR&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;逻辑运算符&#34;&gt;逻辑运算符&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;NOT : 翻转布尔值 (True -&amp;gt; False, False -&amp;gt; True)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;AND : 只有两个变量都为True时，结果才为True (True AND True -&amp;gt; True, True AND False -&amp;gt; False, False AND False -&amp;gt; False)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;OR : 只有两个变量中有一个为True时，结果才为True (True OR True -&amp;gt; True, True OR False -&amp;gt; True, False OR False -&amp;gt; False)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;XOR : 只有两个变量中有一个为True时，结果才为True (True XOR True -&amp;gt; False, True XOR False -&amp;gt; True, False XOR False -&amp;gt; False)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Neovim的常用键位</title>
       <link>https://safe049.github.io/post/neovimuse/</link>
