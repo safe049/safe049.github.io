@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "gatesCS.md",
+                "file": "cursorArch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "gatesCS"
+              "title": "cursorArch"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -164,8 +165,8 @@
   },
   "active": "0eff16d27105b830",
   "lastOpenFiles": [
-    "start.md",
     "gatesCS.md",
+    "start.md",
     "talkaboutstudy.md",
     "utterance.md"
   ]
