@@ -25,6 +25,7 @@ title = 'About'
 
 
 <!-- ===== 动态解锁开始 ===== -->
+<!-- ===== PWD:dysprosium_41 ===== -->
 <div id="hidden" style="display:none;"></div>
 
 <div id="locker" style="margin-top:2em;">
@@ -37,7 +38,7 @@ title = 'About'
 
 <script type="module">
 const HASH = '07e5e510820038bfc8e131fb9680f9254671802f827d2c50fcd80cb9bbf99c39';
-const SECRET_URL = '/private/about-secret.md';
+const NI_GE_XIAO_REN_yougotme = '/private/about-secret.md';
 
 async function sha256(str) {
   const buf = new TextEncoder().encode(str);
@@ -54,7 +55,7 @@ window.unlock = async function () {
     return;
   }
   // 拉取隐藏 Markdown → 转成 HTML → 填进去
-  const resp = await fetch(SECRET_URL);
+  const resp = await fetch(NI_GE_XIAO_REN_yougotme);
   const mdText = await resp.text();
   // 这里用最简 Markdown 解析器 marked（2.5 kB gzip）
   const { marked } = await import('https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js');
