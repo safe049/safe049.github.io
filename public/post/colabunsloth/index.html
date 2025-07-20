@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="zh">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Colab Unsloth SFT 快速训练！ // Dysprosium</title>
     <link rel="shortcut icon" href="https://t.tutu.to/img/NuPBq" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.147.0">
+    <meta name="generator" content="Hugo 0.148.1">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Dysprosium" />
     <meta name="description" content="" />
@@ -28,7 +28,7 @@ model, tokenizer = FastLanguageModel.from_pretrained( model_name = &#34;unsloth/
 数据集准备 前往笔记本中的 Data Prep 部分，修改代码
 def formatting_prompts_func(examples): instructions = examples[&#34;instruction&#34;] inputs = examples[&#34;input&#34;] outputs = examples[&#34;output&#34;] texts = [] for instruction, input, output in zip(instructions, inputs, outputs): # Must add EOS_TOKEN, otherwise your generation will go on forever! text = alpaca_prompt.format(instruction, input, output) &#43; EOS_TOKEN texts.append(text) return { &#34;text&#34; : texts, } pass # 以上大部分内容都需要根据数据集修改以符合格式 from datasets import load_dataset dataset = load_dataset(&#34;yahma/alpaca-cleaned&#34;, split = &#34;train&#34;) # 改为你要使用的数据集和Split dataset = dataset.map(formatting_prompts_func, batched = True,) 为了符合平日训练的需求，我将使用一个典型的SFT训练数据集来进行修改操作">
 
-    <meta property="og:url" content="https://safe049.github.io/post/colabunsloth/">
+    <meta property="og:url" content="http://localhost:1313/post/colabunsloth/">
   <meta property="og:site_name" content="Dysprosium">
   <meta property="og:title" content="Colab Unsloth SFT 快速训练！">
   <meta property="og:description" content="序言 大部分人的GPU都没有训练AI的显存要求，而谷歌Colab完全可以解决这一点
@@ -55,7 +55,7 @@ def formatting_prompts_func(examples): instructions = examples[&#34;instruction&
   </head>
   <body>
     <header class="app-header">
-      <a href="https://safe049.github.io/"><img class="app-header-avatar" src="https://t.tutu.to/img/NuPBq" alt="Dysprosium" /></a>
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="https://t.tutu.to/img/NuPBq" alt="Dysprosium" /></a>
       <span class="app-header-title">Dysprosium</span>
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/">Home</a>
@@ -98,8 +98,8 @@ def formatting_prompts_func(examples): instructions = examples[&#34;instruction&
         </div>
         <div>
           <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-              <a class="tag" href="https://safe049.github.io/tags/ai/">AI</a>
-              <a class="tag" href="https://safe049.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a>
+              <a class="tag" href="http://localhost:1313/tags/ai/">AI</a>
+              <a class="tag" href="http://localhost:1313/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/">计算机科学</a>
         </div>
       </div>
     </header>

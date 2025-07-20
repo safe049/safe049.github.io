@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>维修 on Dysprosium</title>
-    <link>https://safe049.github.io/tags/%E7%BB%B4%E4%BF%AE/</link>
+    <link>http://localhost:1313/tags/%E7%BB%B4%E4%BF%AE/</link>
     <description>Recent content in 维修 on Dysprosium</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate>Sat, 04 Jan 2025 16:44:21 +0800</lastBuildDate>
-    <atom:link href="https://safe049.github.io/tags/%E7%BB%B4%E4%BF%AE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E7%BB%B4%E4%BF%AE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>显卡刷BIOS成砖检测不到的修复-2</title>
-      <link>https://safe049.github.io/post/gpufixbios2/</link>
+      <link>http://localhost:1313/post/gpufixbios2/</link>
       <pubDate>Sat, 04 Jan 2025 16:44:21 +0800</pubDate>
-      <guid>https://safe049.github.io/post/gpufixbios2/</guid>
+      <guid>http://localhost:1313/post/gpufixbios2/</guid>
       <description>&lt;h1 id=&#34;序言&#34;&gt;序言&lt;/h1&gt;&#xA;&lt;p&gt;如果你还没有看过第一篇,请见:&lt;a href=&#34;https://safe049.github.io/post/gpufixbios1/&#34;&gt;显卡刷BIOS成砖检测不到的修复-2&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;这周末,取到编程器[CH341A]回来后,我立马就开始了修复&lt;/p&gt;&#xA;&lt;h1 id=&#34;修复&#34;&gt;修复&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;把夹子装到编程器上,然后夹在显卡的vbios上[在夹之前,请注意你把夹子接在了编程器的24xx还是25xx上,这需要根据bios型号分辨]&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;将编程器连接到电脑上&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;打开NeoProgrammer进行检测,读取芯片&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;读取成功后,清空芯片并进行查空&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;确定为空后,打开显卡原rom进行刷入&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;再次读取检查是否刷入成功&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;完毕&lt;/p&gt;&#xA;&lt;h1 id=&#34;错误&#34;&gt;错误&lt;/h1&gt;&#xA;&lt;p&gt;然而,进行到第四步时,我发现我的显卡vbios芯片有一个几乎无法解除的读写保护,导致无法清空&lt;/p&gt;&#xA;&lt;p&gt;于是,我只能去找显卡售后&amp;mdash;&lt;/p&gt;&#xA;&lt;p&gt;哈哈 保修过了&lt;/p&gt;&#xA;&lt;p&gt;那我换个RX580得了&lt;/p&gt;</description>
     </item>
     <item>
       <title>显卡刷BIOS成砖检测不到的修复-1</title>
-      <link>https://safe049.github.io/post/gpufixbios1/</link>
+      <link>http://localhost:1313/post/gpufixbios1/</link>
       <pubDate>Mon, 30 Dec 2024 21:37:25 +0800</pubDate>
-      <guid>https://safe049.github.io/post/gpufixbios1/</guid>
+      <guid>http://localhost:1313/post/gpufixbios1/</guid>
       <description>&lt;h1 id=&#34;序言&#34;&gt;序言&lt;/h1&gt;&#xA;&lt;p&gt;今早给我的ROG Vega56刷个WX8200 VBIOS&lt;/p&gt;&#xA;&lt;p&gt;结果成砖了&lt;/p&gt;&#xA;&lt;p&gt;屏都亮不了&lt;/p&gt;&#xA;&lt;p&gt;于是就开始了今天的折腾之旅&lt;/p&gt;&#xA;&lt;h1 id=&#34;修复&#34;&gt;修复&lt;/h1&gt;&#xA;&lt;p&gt;经过一阵查询,按照网上的方法,我拆下独显,用核显启动,来来回回试了4次,显卡插拔了不知道多少次&lt;/p&gt;&#xA;&lt;p&gt;可是设备管理器就是找不到独显&lt;/p&gt;&#xA;&lt;p&gt;在tpu上找了找&lt;/p&gt;&#xA;&lt;p&gt;我只好下单一个编程器等下周回来修了&lt;/p&gt;&#xA;&lt;h1 id=&#34;踩点&#34;&gt;踩点&lt;/h1&gt;&#xA;&lt;p&gt;首先,我先找找这卡bios搁那&lt;/p&gt;&#xA;&lt;p&gt;我拆下显卡&lt;/p&gt;&#xA;&lt;p&gt;然后把背板上能看到的螺丝都拆了一次[伏笔]&lt;/p&gt;&#xA;&lt;p&gt;结果背板就是不下&lt;/p&gt;&#xA;&lt;p&gt;幸好,我看到了这个视频:&lt;a href=&#34;https://www.bilibili.com/video/BV1JESuYxEUm&#34;&gt;显卡清灰日记 36 华硕猛禽VEGA56换硅脂&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;然后我才发现&lt;/p&gt;&#xA;&lt;p&gt;妈的! 有两张小贴纸把螺丝糊住了,没看出来有螺丝&lt;/p&gt;&#xA;&lt;p&gt;我把贴纸撕下来才把背板拆下[ 笑喷 不小心糊了一手硅脂 ]&lt;/p&gt;&#xA;&lt;p&gt;然后找到了标有小箭头的BIOS&lt;/p&gt;&#xA;&lt;p&gt;把螺丝装回去&lt;/p&gt;&#xA;&lt;p&gt;踩点结束&lt;/p&gt;&#xA;&lt;p&gt;等下周开始救砖吧&lt;/p&gt;</description>
     </item>
   </channel>

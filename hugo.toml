@@ -4,6 +4,9 @@ title = 'Dysprosium'
 theme = "hugo-theme-m10c"
 
 sectionPagesMenu = 'main'
+
+[markup.goldmark.renderer]
+  unsafe = true
 [menu]
   [[menu.main]]
     identifier = "home"
