@@ -14,8 +14,8 @@ title = 'About'
 # 联系方式
 - QQ:1329261154
 - Email:1329261154@qq.com
-- Github:https://github.com/safe049
-- HuggingFace: https://huggingface.co/safe049
+- Github: [https://github.com/safe049](https://github.com/safe049)
+- HuggingFace: [https://huggingface.co/safe049](https://huggingface.co/safe049)
 
 # 关于本站
 本站使用Hugo M10C主题建立,原使用Valaxy框架
