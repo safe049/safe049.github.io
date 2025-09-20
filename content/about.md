@@ -11,6 +11,8 @@ title = 'About'
 # 成分
 车万人,精神分析,Python,C++,Transformer,AI微调,Arch Linux用户,做音乐的,画速写,数位板长久未用,哲学，主战地一玩家,网安人,等
 
+![d0.jpg](https://free.picui.cn/free/2025/09/20/68ce954e896b0.jpg)
+
 # 联系方式
 - QQ:1329261154
 - Email:1329261154@qq.com
