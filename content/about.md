@@ -6,12 +6,20 @@ title = 'About'
 # 你好
 我是镝零,外网名Dysprosium，你也可以叫我D0
 
-一个平平无奇的初二生
+一个平平无奇的初三生
 
 # 成分
-车万人,精神分析,Python,C++,Transformer,AI微调,Arch Linux用户,做音乐的,画速写,数位板长久未用,哲学，主战地一玩家,网安人,等
+计算机科学，车万人,精神分析,Python,C++,Transformer,AI微调,Arch Linux用户,做音乐的,画速写,数位板长久未用,哲学，主战地一玩家,网安人,等
 
 ![d0.jpg](https://free.picui.cn/free/2025/09/20/68ce954e896b0.jpg)
+
+哲学上比较偏德国古典唯心，计算机在后端，底层，数电【我在logisim里搓过cpu】都比较精通，音乐偏IDM，Synthwave
+
+咖啡
+
+# 玩的游戏
+
+战地一，迈阿密热线，ultrakill，mc【java】，大镖客2,等等
 
 # 联系方式
 - QQ:1329261154
