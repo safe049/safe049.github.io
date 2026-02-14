@@ -4,7 +4,7 @@
     <title>更改密码无用的解决 // Dysprosium</title>
     <link rel="shortcut icon" href="https://free.picui.cn/free/2025/12/13/693ce20668726.png" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.155.2">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Dysprosium" />
     <meta name="description" content="" />
@@ -92,7 +92,7 @@
 <p>我今天用nvim改hyprland的配置文件,不过因为权限问题保存不了,我尝试用 <code>:w ! sudo tee %</code>,他提示我尝试使用-s参数,于是我输入 <code>:w ! sudo tee -s %</code>,我看到nvim在为sudo的密码验证输入一些空格,错误了好几次,于是我退出nvim.尝试用sudo nvim 编辑,但是却发现我的密码不管用了</p>
 <p>我尝试passwd自己的用户更改密码,然后重试,密码还是错的</p>
 <p>于是我su进root用户更改,还是没用</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>   dynamo   ~ git-<span style="color:#f92672">[</span> main<span style="color:#f92672">]</span>-  sudo su dynamo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>   dynamo   ~ git-<span style="color:#f92672">[</span> main<span style="color:#f92672">]</span>-  sudo su dynamo
 </span></span><span style="display:flex;"><span>Deploying root access <span style="color:#66d9ef">for</span> dynamo. Password pls:
 </span></span><span style="display:flex;"><span>对不起，请重试。
 </span></span><span style="display:flex;"><span>Deploying root access <span style="color:#66d9ef">for</span> dynamo. Password pls:
@@ -119,7 +119,7 @@
 </blockquote>
 <p>于是我在Arch手册查询了<a href="https://man.archlinux.org/man/pam_faillock.8.en">pam_failock</a></p>
 <p>然后在终端查看了failock状态:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>   dynamo   ~ git-<span style="color:#f92672">[</span> main<span style="color:#f92672">]</span>-  faillock
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>   dynamo   ~ git-<span style="color:#f92672">[</span> main<span style="color:#f92672">]</span>-  faillock
 </span></span><span style="display:flex;"><span>dynamo:
 </span></span><span style="display:flex;"><span>When                Type  Source                                           Valid
 </span></span><span style="display:flex;"><span>2024-12-21 11:59:04 SVC   sudo                                                 V
@@ -128,7 +128,7 @@
 </span></span></code></pre></div><p>我发现我的账户因为在nvim上的多次验证错误被锁定了,所以无法登陆</p>
 <p>于是我通过 <code>faillock --reset</code> 重置了账号的锁定状态</p>
 <p>现在,终于可以正常验证了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>   dynamo   ~ git-<span style="color:#f92672">[</span> main<span style="color:#f92672">]</span>-  faillock
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>   dynamo   ~ git-<span style="color:#f92672">[</span> main<span style="color:#f92672">]</span>-  faillock
 </span></span><span style="display:flex;"><span>dynamo:
 </span></span><span style="display:flex;"><span>When                Type  Source                                           Valid
 </span></span><span style="display:flex;"><span><span style="color:#f92672">(</span>base<span style="color:#f92672">)</span>   dynamo   ~ git-<span style="color:#f92672">[</span> main<span style="color:#f92672">]</span>-  sudo su

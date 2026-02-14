@@ -3,15 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://safe049.github.io/</loc>
-    <lastmod>2025-12-13T11:51:53+08:00</lastmod>
+    <lastmod>2026-02-13T21:39:53+08:00</lastmod>
   </url><url>
-    <loc>https://safe049.github.io/post/merry_christmas_2025/</loc>
-    <lastmod>2025-12-13T11:51:53+08:00</lastmod>
+    <loc>https://safe049.github.io/post/sicp-0/</loc>
+    <lastmod>2026-02-13T21:39:53+08:00</lastmod>
   </url><url>
     <loc>https://safe049.github.io/post/</loc>
-    <lastmod>2025-12-13T11:51:53+08:00</lastmod>
+    <lastmod>2026-02-13T21:39:53+08:00</lastmod>
+  </url><url>
+    <loc>https://safe049.github.io/tags/sicp/</loc>
+    <lastmod>2026-02-13T21:39:53+08:00</lastmod>
   </url><url>
     <loc>https://safe049.github.io/tags/</loc>
+    <lastmod>2026-02-13T21:39:53+08:00</lastmod>
+  </url><url>
+    <loc>https://safe049.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2026-02-13T21:39:53+08:00</lastmod>
+  </url><url>
+    <loc>https://safe049.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
+    <lastmod>2026-02-13T21:39:53+08:00</lastmod>
+  </url><url>
+    <loc>https://safe049.github.io/post/merry_christmas_2025/</loc>
     <lastmod>2025-12-13T11:51:53+08:00</lastmod>
   </url><url>
     <loc>https://safe049.github.io/tags/%E6%97%A5%E8%AE%B0/</loc>
@@ -45,9 +57,6 @@
     <lastmod>2025-02-19T20:49:18+08:00</lastmod>
   </url><url>
     <loc>https://safe049.github.io/post/colabunsloth/</loc>
-    <lastmod>2025-02-19T20:49:18+08:00</lastmod>
-  </url><url>
-    <loc>https://safe049.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</loc>
     <lastmod>2025-02-19T20:49:18+08:00</lastmod>
   </url><url>
     <loc>https://safe049.github.io/tags/arch-linux/</loc>
@@ -96,9 +105,6 @@
     <lastmod>2024-12-21T23:06:01+08:00</lastmod>
   </url><url>
     <loc>https://safe049.github.io/post/cs50x1/</loc>
-    <lastmod>2024-12-21T23:06:01+08:00</lastmod>
-  </url><url>
-    <loc>https://safe049.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2024-12-21T23:06:01+08:00</lastmod>
   </url><url>
     <loc>https://safe049.github.io/post/seewoarchlinux/</loc>

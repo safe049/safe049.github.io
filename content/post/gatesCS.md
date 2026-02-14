@@ -21,6 +21,3 @@ comments = true
 - OR : 只有两个变量中有一个为True时，结果才为True (True OR True -> True, True OR False -> True, False OR False -> False)
 
 - XOR : 只有两个变量中有一个为True时，结果才为True (True XOR True -> False, True XOR False -> True, False XOR False -> False)
-
-### 图像
-![NOT AND OR XOR](image.png)

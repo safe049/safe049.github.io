@@ -4,7 +4,7 @@
     <title>Arch Linux中安装希沃白板5 // Dysprosium</title>
     <link rel="shortcut icon" href="https://free.picui.cn/free/2025/12/13/693ce20668726.png" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.155.2">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Dysprosium" />
     <meta name="description" content="" />
@@ -117,16 +117,16 @@ cp EasiNote5.desktop /usr/share/applications 大功告成,你也可以把此文�
 <h1 id="安装">安装</h1>
 <p>在必应上搜seewo arch linux,出现了这个AUR仓库:<a href="https://aur.archlinux.org/packages/com.seewo.easinote5">com.seewo.easinote5</a></p>
 <p>使用paru或yay进行安装</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yay -S com.seewo.easinote5
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yay -S com.seewo.easinote5
 </span></span></code></pre></div><p>等待安装完毕</p>
 <p>安装完毕后,你会发现没有任何入口打开希沃,EasiNote5不行,包名也不行</p>
 <p>看了看AUR仓库的评论,发现包在opt目录中</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /opt/apps/com.seewo.easinote5/files
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd /opt/apps/com.seewo.easinote5/files
 </span></span><span style="display:flex;"><span>./EasiNote5
 </span></span></code></pre></div><p>希沃启动了,看起来不错</p>
 <p>但是还是太不方便了</p>
 <p>所以我们做一个桌面入口方便启动</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-desktop" data-lang="desktop"><span style="display:flex;"><span><span style="color:#66d9ef">[Desktop Entry]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-desktop" data-lang="desktop"><span style="display:flex;"><span><span style="color:#66d9ef">[Desktop Entry]</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Name</span><span style="color:#f92672">=</span><span style="color:#e6db74">EasiNote5</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Exec</span><span style="color:#f92672">=</span><span style="color:#e6db74">/opt/apps/com.seewo.easinote5/files/EasiNote5</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Terminal</span><span style="color:#f92672">=</span><span style="color:#e6db74">false</span>
@@ -137,7 +137,7 @@ cp EasiNote5.desktop /usr/share/applications 大功告成,你也可以把此文�
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">Comment</span>[zh_CN]<span style="color:#f92672">=</span><span style="color:#e6db74">希沃白板5</span>
 </span></span></code></pre></div><p>将此文件保存为EasiNote5.desktop</p>
 <p>将其复制到/usr/share/applications</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp EasiNote5.desktop /usr/share/applications
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cp EasiNote5.desktop /usr/share/applications
 </span></span></code></pre></div><p>大功告成,你也可以把此文件复制到KDE或者什么桌面环境的桌面上,如果你使用KDE什么的,你应该能搜索到希沃白板,如果你在用Hyprland之类的WM,你在Rofi之类的启动器里应该也能搜索到</p>
 <h1 id="总结">总结</h1>
 <p>使用yay安装希沃白板AUR包并创建.desktop入口</p>
