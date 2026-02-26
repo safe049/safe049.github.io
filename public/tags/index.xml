@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Dysprosium</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 14 Feb 2026 22:41:53 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 15:58:53 +0800</lastBuildDate>
     <atom:link href="https://safe049.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://safe049.github.io/tags/linux/</link>
+      <pubDate>Thu, 26 Feb 2026 15:58:53 +0800</pubDate>
+      <guid>https://safe049.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>日记</title>
+      <link>https://safe049.github.io/tags/%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Thu, 26 Feb 2026 15:58:53 +0800</pubDate>
+      <guid>https://safe049.github.io/tags/%E6%97%A5%E8%AE%B0/</guid>
+      <description></description>
+    </item>
     <item>
       <title>SICP</title>
       <link>https://safe049.github.io/tags/sicp/</link>
@@ -27,13 +41,6 @@
       <link>https://safe049.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</link>
       <pubDate>Sat, 14 Feb 2026 22:41:53 +0800</pubDate>
       <guid>https://safe049.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>日记</title>
-      <link>https://safe049.github.io/tags/%E6%97%A5%E8%AE%B0/</link>
-      <pubDate>Sat, 13 Dec 2025 11:51:53 +0800</pubDate>
-      <guid>https://safe049.github.io/tags/%E6%97%A5%E8%AE%B0/</guid>
       <description></description>
     </item>
     <item>
@@ -90,13 +97,6 @@
       <link>https://safe049.github.io/tags/hyprland/</link>
       <pubDate>Sun, 02 Feb 2025 17:11:23 +0800</pubDate>
       <guid>https://safe049.github.io/tags/hyprland/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://safe049.github.io/tags/linux/</link>
-      <pubDate>Sun, 02 Feb 2025 17:11:23 +0800</pubDate>
-      <guid>https://safe049.github.io/tags/linux/</guid>
       <description></description>
     </item>
     <item>

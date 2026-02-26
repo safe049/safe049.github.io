@@ -6,8 +6,15 @@
     <description>Recent content in 日记 on Dysprosium</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate>Sat, 13 Dec 2025 11:51:53 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Feb 2026 15:58:53 +0800</lastBuildDate>
     <atom:link href="https://safe049.github.io/tags/%E6%97%A5%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从Arch到Fedora</title>
+      <link>https://safe049.github.io/post/fedora/</link>
+      <pubDate>Thu, 26 Feb 2026 15:58:53 +0800</pubDate>
+      <guid>https://safe049.github.io/post/fedora/</guid>
+      <description>&lt;h1 id=&#34;序&#34;&gt;序&lt;/h1&gt;&#xA;&lt;p&gt;我的Arch可真是越来越乱了，故，我决定重装系统，不过这次我打算尝点新的，就去装了Fedora&lt;/p&gt;&#xA;&lt;p&gt;最开始我想装OpenSUSE，但是&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;如下&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;安装：5/5，高自定义度的同时点点就行，速度快&#xA;安装后处理：2，grub双系统需要复杂调试，键盘和鼠标等usb设备经常需要很久才能被加载好&#xA;使用：&#xA;输入法：自带中文拼音输入法，体验拉满&#xA;大部分国内软件包括qq需要使用flatpak安装&#xA;包管理器强大&#xA;yast不太符合我个人口味，但确实强大&#xA;3/5&#xA;&#xA;我不行了，我要去用fedora了，opensuse也许很好，但他似乎和我的计算机很不兼容&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我遇到一大堆乱的很的毛病，所以换Fedora了&lt;/p&gt;&#xA;&lt;h1 id=&#34;体验&#34;&gt;体验&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;安装：好！虽然自定义程度低，但一键完成，真一键，而且自动适配了Windows加上了引导，也有自带的拼音输入法&lt;/li&gt;&#xA;&lt;li&gt;使用：社区生态稍逊，相比Arch的AUR完全没面子，但论日用特别好，在国内环境下大部分软件有RPM，方便。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;总的来说，安装打5分，使用4分&lt;/p&gt;&#xA;&lt;p&gt;后面的我还没怎么体验到，，另外，包管理器很强大。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Merry Christmas 2025</title>
       <link>https://safe049.github.io/post/merry_christmas_2025/</link>

@@ -4,7 +4,7 @@
     <title>MIT SICP 6.001 Lec1a: Lisp概览 笔记 // Dysprosium</title>
     <link rel="shortcut icon" href="https://free.picui.cn/free/2025/12/13/693ce20668726.png" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.155.2">
+    <meta name="generator" content="Hugo 0.152.2">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Dysprosium" />
     <meta name="description" content="" />
@@ -215,10 +215,10 @@ lisp所用的是前缀表达式，即运算符在运算对象前">
 <p>当有人展示一个语言时，你应该问他：构成语言的基本元素[Primitive Elements]有哪些？他们组合的方法是什么？抽象的方法是什么？</p>
 <p>lisp的基本元素：3 17.4 5 +</p>
 <p>组合他们的方法：【把求和运算符运用于他们】</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">17.4</span> <span style="color:#ae81ff">5</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">17.4</span> <span style="color:#ae81ff">5</span>)
 </span></span></code></pre></div><p><code>+</code> 是运算符[Operators]， 那些数字是运算对象[Operands]</p>
 <p>组合也可以成为运算对象，比如：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">6</span>) <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">2</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">6</span>) <span style="color:#ae81ff">8</span> <span style="color:#ae81ff">2</span>)
 </span></span></code></pre></div><p>构造组合式是组合的基本需求</p>
 <p>lisp所用的是前缀表达式，即运算符在运算对象前</p>
 <p>括号表示所括的东西是一个组合式，不闭合意思就不一样了</p>
@@ -233,26 +233,26 @@ lisp所用的是前缀表达式，即运算符在运算对象前">
 </code></pre><p>括号只是将这种结构写成表达式的一种方法</p>
 <p>你还可以定义一个名字给组合式</p>
 <p>如</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(DEFINE A (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(DEFINE A (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span>))
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">*</span> A A) =&gt; <span style="color:#ae81ff">625</span>
 </span></span><span style="display:flex;"><span>(DEFINE B (<span style="color:#a6e22e">+</span> A (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">5</span> A)))
 </span></span></code></pre></div><p>那我们想把给定一个数与其自身相乘起个名字怎么办？</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(DEFINE (SQUARE X) (<span style="color:#a6e22e">*</span> X X)) 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(DEFINE (SQUARE X) (<span style="color:#a6e22e">*</span> X X)) 
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>(SQUARE <span style="color:#ae81ff">10</span>) =&gt; <span style="color:#ae81ff">100</span>
 </span></span></code></pre></div><p><code>(DEFINE (SQUARE X) (* X X)) </code> -&gt; 要 平方 某物， 将其乘以自身</p>
 <p>其他命名方法：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(DEFINE SQUARE (LAMBDA (X) (<span style="color:#a6e22e">*</span> X X)))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(DEFINE SQUARE (LAMBDA (X) (<span style="color:#a6e22e">*</span> X X)))
 </span></span></code></pre></div><p>lambda 表示构建一个过程</p>
 <p>即，构建一个带有参数x的过程，返回x乘以x的结果</p>
 <p>他和前面那个方法没有区别，只是写法不同，前者只是后者的一种语法糖</p>
 <p>然后我们就可以</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(SQUARE (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">7</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(SQUARE (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">7</span>))
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> (SQUARE <span style="color:#ae81ff">3</span>) (SQUARE <span style="color:#ae81ff">4</span>))
 </span></span><span style="display:flex;"><span>(SQUARE (SQUARE (SQUARE <span style="color:#ae81ff">1001</span>)))
 </span></span></code></pre></div><p>如果你直接输入square，lisp会输出： 复合过程 square</p>
 <p>再复杂一些，可以：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (average x y)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (average x y)
 </span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">/</span> (<span style="color:#a6e22e">+</span> x y) <span style="color:#ae81ff">2</span>))
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>(define (mean-square x y)
@@ -265,19 +265,19 @@ lisp所用的是前缀表达式，即运算符在运算对象前">
 <p>让我们来看看条件判断</p>
 <p>我们知道abs（x）可以表示为一个当x小于0为-x，等于0为x，大于0为x的函数</p>
 <p>那么lisp里可以这样表达：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (<span style="color:#a6e22e">abs</span> x)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (<span style="color:#a6e22e">abs</span> x)
 </span></span><span style="display:flex;"><span>  (cond ((<span style="color:#a6e22e">&lt;</span> x <span style="color:#ae81ff">0</span>) (<span style="color:#a6e22e">-</span> x))
 </span></span><span style="display:flex;"><span>        ((<span style="color:#a6e22e">=</span> x <span style="color:#ae81ff">0</span>) <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>        ((<span style="color:#a6e22e">&gt;</span> x <span style="color:#ae81ff">0</span>) x)))
 </span></span></code></pre></div><p>(&lt; x 0) 是一个谓词或条件，谓词在lisp是可以表达true或false的东西，（- x）是子句，根据谓词做某事</p>
 <p>还有一种语法糖：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (<span style="color:#a6e22e">abs</span> x)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (<span style="color:#a6e22e">abs</span> x)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">&lt;</span> x <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">-</span> x)
 </span></span><span style="display:flex;"><span>      x))
 </span></span></code></pre></div><p>但我们没有循环，那么如何实现heron的平方根算法呢？</p>
 <p>递归定义。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define square (lambda (x) (<span style="color:#a6e22e">*</span> x x)))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define square (lambda (x) (<span style="color:#a6e22e">*</span> x x)))
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>(define (average x y) (<span style="color:#a6e22e">/</span> (<span style="color:#a6e22e">+</span> x y) <span style="color:#ae81ff">2</span>))
 </span></span><span style="display:flex;"><span>
@@ -302,7 +302,7 @@ lisp所用的是前缀表达式，即运算符在运算对象前">
 <li>抽象方法  define</li>
 </ul>
 <p>FAQ:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a6e22e">&gt;</span> (define a (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#a6e22e">&gt;</span> (define a (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span>))
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">&gt;</span> (define (d) (<span style="color:#a6e22e">*</span> <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">5</span>))
 </span></span></code></pre></div><p>这两个写法有什么区别：</p>
 <p>第一种定义了一个数据，第二种是一个过程：</p>

@@ -4,7 +4,7 @@
     <title>Colab Unsloth SFT 快速训练！ // Dysprosium</title>
     <link rel="shortcut icon" href="https://free.picui.cn/free/2025/12/13/693ce20668726.png" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.155.2">
+    <meta name="generator" content="Hugo 0.152.2">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Dysprosium" />
     <meta name="description" content="" />
@@ -117,7 +117,7 @@ def formatting_prompts_func(examples): instructions = examples[&#34;instruction&
 <p>首先先不要急着运行运行时，先修改一下笔记本的代码</p>
 <h3 id="模型下载">模型下载</h3>
 <p>首先，修改第二个代码框的这一部分：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>model, tokenizer <span style="color:#f92672">=</span> FastLanguageModel<span style="color:#f92672">.</span>from_pretrained(
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>model, tokenizer <span style="color:#f92672">=</span> FastLanguageModel<span style="color:#f92672">.</span>from_pretrained(
 </span></span><span style="display:flex;"><span>    model_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;unsloth/Meta-Llama-3.1-8B&#34;</span>, <span style="color:#75715e"># 修改这里</span>
 </span></span><span style="display:flex;"><span>    max_seq_length <span style="color:#f92672">=</span> max_seq_length,
 </span></span><span style="display:flex;"><span>    dtype <span style="color:#f92672">=</span> dtype,
@@ -127,7 +127,7 @@ def formatting_prompts_func(examples): instructions = examples[&#34;instruction&
 </span></span></code></pre></div><p>将需要修改的部分修改为你要使用的模型，可以直接使用Hugging Face库名</p>
 <h3 id="数据集准备">数据集准备</h3>
 <p>前往笔记本中的 <code>Data Prep</code> 部分，修改代码</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">formatting_prompts_func</span>(examples):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">formatting_prompts_func</span>(examples):
 </span></span><span style="display:flex;"><span>    instructions <span style="color:#f92672">=</span> examples[<span style="color:#e6db74">&#34;instruction&#34;</span>]
 </span></span><span style="display:flex;"><span>    inputs       <span style="color:#f92672">=</span> examples[<span style="color:#e6db74">&#34;input&#34;</span>]
 </span></span><span style="display:flex;"><span>    outputs      <span style="color:#f92672">=</span> examples[<span style="color:#e6db74">&#34;output&#34;</span>]
@@ -151,16 +151,16 @@ def formatting_prompts_func(examples): instructions = examples[&#34;instruction&
 <p>由于部分数据集修改极其麻烦，你可以借助AI进行修改，我推荐ChatGPT或者Kimi的非1.5版本</p>
 <p>在此例子中，代码的修改很简单，但需要对instruction字段进行处理</p>
 <p>修改后整体代码:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>alpaca_prompt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>alpaca_prompt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;&#34;Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">### Instruction:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#e6db74">{}</span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">### Input:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{}</span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#e6db74">{}</span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
 </span></span></span><span style="display:flex;"><span><span style="color:#e6db74">### Response:
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>EOS_TOKEN <span style="color:#f92672">=</span> tokenizer<span style="color:#f92672">.</span>eos_token  <span style="color:#75715e"># Must add EOS_TOKEN</span>
 </span></span><span style="display:flex;"><span>
@@ -181,7 +181,7 @@ def formatting_prompts_func(examples): instructions = examples[&#34;instruction&
 <h3 id="修改上传部分">修改上传部分</h3>
 <p>修改 Saving, loading finetuned models 的部分</p>
 <p>如果你愿意可以使用Inference部分进行推理，现在可以直接跳到 Saving to float16 for VLLM 部分</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Merge to 16bit</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Merge to 16bit</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">False</span>: model<span style="color:#f92672">.</span>save_pretrained_merged(<span style="color:#e6db74">&#34;model&#34;</span>, tokenizer, save_method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;merged_16bit&#34;</span>,)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">False</span>: model<span style="color:#f92672">.</span>push_to_hub_merged(<span style="color:#e6db74">&#34;hf/model&#34;</span>, tokenizer, save_method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;merged_16bit&#34;</span>, token <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
 </span></span><span style="display:flex;"><span>
@@ -197,12 +197,12 @@ def formatting_prompts_func(examples): instructions = examples[&#34;instruction&
 <p>将token内的值设置为你的Hugging Face Token的值，请确保你的token有访问和写入权限</p>
 <p>将你要导出的部分的False改为True即可上传</p>
 <p>加入要上传16bit而不保存至colab服务器内，代码如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Merge to 16bit</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Merge to 16bit</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">False</span>: model<span style="color:#f92672">.</span>save_pretrained_merged(<span style="color:#e6db74">&#34;model&#34;</span>, tokenizer, save_method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;merged_16bit&#34;</span>,)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">True</span>: model<span style="color:#f92672">.</span>push_to_hub_merged(<span style="color:#e6db74">&#34;hf/model&#34;</span>, tokenizer, save_method <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;merged_16bit&#34;</span>, token <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>)
 </span></span></code></pre></div><p>你还可以保存为GGUF，对于低显存显卡，这是必要的</p>
 <p>在GGUF / llama.cpp Conversion部分的修改与完整模型的上传类似，修改模型名与token，这里我建议上传16bit GGUF与q4_k_m GGUF，修改后代码如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Save to 8bit Q8_0</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Save to 8bit Q8_0</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">False</span>: model<span style="color:#f92672">.</span>save_pretrained_gguf(<span style="color:#e6db74">&#34;model&#34;</span>, tokenizer,)
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Remember to go to https://huggingface.co/settings/tokens for a token!</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># And change hf to your username!</span>

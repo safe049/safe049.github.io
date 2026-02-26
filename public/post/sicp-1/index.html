@@ -4,7 +4,7 @@
     <title>MIT SICP 6.001 Lec1b: 计算过程 笔记 // Dysprosium</title>
     <link rel="shortcut icon" href="https://free.picui.cn/free/2025/12/13/693ce20668726.png" />
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.155.2">
+    <meta name="generator" content="Hugo 0.152.2">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Dysprosium" />
     <meta name="description" content="" />
@@ -129,7 +129,7 @@
 <li>对所得的新主体进行求值。</li>
 </ol>
 <p>举例：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (sq x) (<span style="color:#a6e22e">*</span> x x))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (sq x) (<span style="color:#a6e22e">*</span> x x))
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>(sq <span style="color:#ae81ff">5</span>) 
 </span></span><span style="display:flex;"><span>
@@ -141,23 +141,23 @@
 <p>代换模型并不是计算机的实际运作方法，但现在先这么想</p>
 <p>对于一个if语句，会先求值谓词表达式，如果返回真，求值子句表达式，否则，求值选择表达式。</p>
 <p>但，你写不一样的代码，最后运算中的“形状”也不一样</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (<span style="color:#a6e22e">+</span> x y)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (<span style="color:#a6e22e">+</span> x y)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">=</span> x <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>      y
 </span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">+</span> (-1+ x) (<span style="color:#a6e22e">1+</span> y))))
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#75715e">; 按过程，得到</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#75715e">; 按过程，得到</span>
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">5</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">6</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">7</span>)
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
 </span></span></code></pre></div><p>另一种写法中，</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (<span style="color:#a6e22e">+</span> x y)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (<span style="color:#a6e22e">+</span> x y)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">=</span> x <span style="color:#ae81ff">0</span>)
 </span></span><span style="display:flex;"><span>      y
 </span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> (-1+ x) y))))
 </span></span></code></pre></div><p>按过程得到</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>))
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">4</span>)))
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">4</span>))))
@@ -167,7 +167,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span>
 </span></span></code></pre></div><p>两种方法的形状明显不同，前者很直，后者头顶尖尖，先变大再变小，不马上求值而是堆起来之后再求</p>
 <p>而这就引入了时间空间的概念，我们可以想象一个计算机，慢慢代换字符串，像这样：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#75715e">; 按过程，得到</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#75715e">; 按过程，得到</span>
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">5</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">6</span>)
@@ -176,7 +176,7 @@
 </span></span></code></pre></div><p>计算的步骤与计算所用时间近似相等，竖着看作时间，横着看作空间，即计算需要保存的信息量</p>
 <p>这个过程里数每大一点就多加一行，所以说他的时间为O(x)即正比于x，消耗的空间不变，所以空间为O(1)，这是迭代式的，线性迭代式</p>
 <p>我们再看</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>))
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">4</span>)))
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">4</span>))))
@@ -190,19 +190,19 @@
 <p><img src="image-2.png" alt="alt text"></p>
 <p><img src="image-3.png" alt="alt text"></p>
 <p>但区别是，迭代式可以用明确的变量保存计算过程中的状态，比如你运行到这给程序掐了：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#75715e">; 按过程，得到</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span><span style="color:#75715e">; 按过程，得到</span>
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">5</span>)
 </span></span></code></pre></div><p>还可以继续，所有状态都直接保存在参数里</p>
 <p>但递归不行</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span>)
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>))
 </span></span><span style="display:flex;"><span>(<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">1+</span> (<span style="color:#a6e22e">+</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">4</span>)))
 </span></span></code></pre></div><p>这样就不能回到原来计算(+ 3 4)本应是的那样了，未完成的1+操作隐式保存在计算机的深处【栈】</p>
 <p>计算机里还隐藏了一会儿要推迟计算的内容</p>
 <p>当然，还存在一些其他“形状“</p>
 <p>比如兔群繁殖问题，那是指数级增长的,事实上就是斐波那契数</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (fib n)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lisp" data-lang="lisp"><span style="display:flex;"><span>(define (fib n)
 </span></span><span style="display:flex;"><span>  (<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">&lt;</span> n <span style="color:#ae81ff">2</span>)
 </span></span><span style="display:flex;"><span>      n
 </span></span><span style="display:flex;"><span>      (<span style="color:#a6e22e">+</span> (fib (<span style="color:#a6e22e">-</span> n <span style="color:#ae81ff">1</span>))
