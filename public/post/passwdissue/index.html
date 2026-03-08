@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>更改密码无用的解决 // Dysprosium</title>
     <link rel="shortcut icon" href="https://free.picui.cn/free/2025/12/13/693ce20668726.png" />
     <meta charset="utf-8" />
@@ -20,7 +20,7 @@
 于是我su进root用户更改,还是没用
 (base)  dynamo  ~ git-[ main]-  sudo su dynamo Deploying root access for dynamo. Password pls: 对不起，请重试。 Deploying root access for dynamo. Password pls: 对不起，请重试。 Deploying root access for dynamo. Password pls: sudo: 3 次错误密码尝试 (base)  dynamo  ~ git-[ main]-  su root 密码： [root@archyyds dynamo]# passwd dynamo 新的密码： 重新输入新的密码： passwd：已成功更新密码 (base)  dynamo  ~ git-[ main]-  sudo su Deploying root access for dynamo. Password pls: 对不起，请重试。 解决方案 我上万能的Arch论坛查了查,发现一个帖子:">
 
-    <meta property="og:url" content="https://safe049.github.io/post/passwdissue/">
+    <meta property="og:url" content="http://localhost:1313/post/passwdissue/">
   <meta property="og:site_name" content="Dysprosium">
   <meta property="og:title" content="更改密码无用的解决">
   <meta property="og:description" content="序言 我今天用nvim改hyprland的配置文件,不过因为权限问题保存不了,我尝试用 :w ! sudo tee %,他提示我尝试使用-s参数,于是我输入 :w ! sudo tee -s %,我看到nvim在为sudo的密码验证输入一些空格,错误了好几次,于是我退出nvim.尝试用sudo nvim 编辑,但是却发现我的密码不管用了
@@ -39,7 +39,7 @@
   </head>
   <body>
     <header class="app-header">
-      <a href="https://safe049.github.io/"><img class="app-header-avatar" src="https://free.picui.cn/free/2025/12/13/693ce20668726.png" alt="Dysprosium" /></a>
+      <a href="http://localhost:1313/"><img class="app-header-avatar" src="https://free.picui.cn/free/2025/12/13/693ce20668726.png" alt="Dysprosium" /></a>
       <span class="app-header-title">Dysprosium</span>
       <nav class="app-header-menu">
           <a class="app-header-menu-item" href="/">Home</a>
@@ -82,8 +82,8 @@
         </div>
         <div>
           <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
-              <a class="tag" href="https://safe049.github.io/tags/linux/">Linux</a>
-              <a class="tag" href="https://safe049.github.io/tags/arch-linux/">Arch Linux</a>
+              <a class="tag" href="http://localhost:1313/tags/linux/">Linux</a>
+              <a class="tag" href="http://localhost:1313/tags/arch-linux/">Arch Linux</a>
         </div>
       </div>
     </header>
@@ -158,6 +158,51 @@
       
     </div>
   </article>
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdmirror.com/npm/aplayer/dist/APlayer.min.js"></script>
+    
+    <script src="https://cdn.jsdmirror.com/npm/meting@2.0.1/dist/Meting.min.js"></script>
+</head>
+
+<body>
+    <div class="demo">
+        <div id="player1">
+        </div>
+    </div>
+    <script>
+        var ap = new APlayer
+            ({
+                element: document.getElementById('player1'),
+                fixed: true,
+                autoplay: false,
+                mini: true,
+                theme: '#f8f4fc',
+                loop: 'none',
+                order: 'random',
+                preload: 'none',
+                volume: 0.4,
+                mutex: true,
+                listFolded: true,
+                listMaxHeight: '500px',
+                lrcType: 0,
+                music: [
+                    {
+                        name: 'cliqhop idm',
+                        artist: 'SomaFM',
+                        url: 'https://ice5.somafm.com/cliqhop-256-mp3',
+                        cover: 'https://somafm.com/img3/cliqhop-400.png'
+                    }
+                ]
+            });
+        
+    </script>
+</body>
+  
 
     </main>
   </body>
